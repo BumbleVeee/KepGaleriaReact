@@ -1,0 +1,18 @@
+.kiskep{
+    border: 1px solid white;
+    border-radius: 15px;
+   
+    padding: 10px;
+    flex: 0 0 calc(30% - 10px);
+}
+
+img{
+    width: 100%;
+}
+
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
