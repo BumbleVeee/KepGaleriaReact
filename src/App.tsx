@@ -1,16 +1,17 @@
+import { useState } from 'react'
 import './App.css'
-import { KEPLISTA} from './adatok'
+import { KEPLISTA, type KepTipus} from './adatok'
 import Galeria from './components/Galeria'
 import NagyKep from './components/NagyKep'
 
 function App() {
-  /*
-  const [lista, setLista] = useState<KepTipus[]>(KEPLISTA)
+
+  const [lista] = useState<KepTipus[]>(KEPLISTA)
 
   function kivalasztKezelo(index:number){
-    
+    console.log("kivalasztott index: ", index)
   }
-  */
+
 
   return (
     <>
@@ -23,7 +24,7 @@ function App() {
       </section>
       <article>
         {/* ide kerül a macska */}
-        <Galeria lista={KEPLISTA}/> {/* függvény referencia */}
+        <Galeria lista={lista} kivalasztKezelo={kivalasztKezelo}/> {/* függvény referencia */}
       </article>
       <footer><p>Gubek Vera</p></footer>
     </>
