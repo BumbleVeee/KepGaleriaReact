@@ -6,7 +6,7 @@ interface GaleriaProps {
     kivalasztKezelo:(index:number)=>void
 }
 
-function Galeria({lista, kivalasztKezelo}:GaleriaProps){
+function Galeria({lista, kivalasztKezelo}:GaleriaProps){ /* specialis parameter props */
     return (
         <div className="galeria">
             {
